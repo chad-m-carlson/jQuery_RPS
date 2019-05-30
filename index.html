@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>jQuery RPS</title>
+</head>
+<body>
+  <h1>RPS yet again</h1>
+  <!-- ROUNDS YOU WANT TO PLAY TOGGLES WITH RESULTS SHOWN-->
+  <div class="start" id="start">
+    <div class="entry">
+        <h3>How many games?<h3>
+        <input id="games">
+        <br />
+        <button id="start_game">PLAY!</button>
+    </div>
+    <!-- <div class="entry">
+        <h3>How many rounds?</h3>
+        <input id="rounds" placeholder="rounds">
+    </div> -->
+  </div>
+  <div class="hidden" id="score_card">
+    <div id="results">
+      
+    </div>
+  </div>
+  <!-- START BUTTON HIDES UPON CLICK -->
+
+  <!-- VS DIV DISPLAYS PLAYERS AND COMPUTER CHOICE WITH VS BETWEEN -->
+  <!-- THEM. SET A TIMEOUT SO THE WILL DISAPPEAR AND PLAY IMAGES UNLOCK -->
+  <div id="game_play_container" class="hidden">
+    <div class="show_plays">
+      <div id="user_play">
+
+      </div>
+      <div>
+        <h1>VS</h1>
+      </div>
+      <div id="computer_play">
+
+      </div>
+    </div>
+
+    <h3>Click an icon below to play</h3>
+    <!-- PLAY ACTION BUTTONS -->
+    <div class="action_buttons">
+      <img class='game_button' id="rock" src='https://goodday451999.github.io/Rock-Paper-Scissors-Neo/images/stone.png'>
+      <img class='game_button' id="paper" src='https://goodday451999.github.io/Rock-Paper-Scissors-Neo/images/paper.png'>
+      <img class='game_button' id="scissors" src='http://chittagongit.com/images/rock-paper-scissors-icon/rock-paper-scissors-icon-5.jpg'>
+    </div>
+  </div>
+    
+    <!-- TRENDS -->
+  <div id="trends">
+    <div>
+      <h3 id="all_computer_wins"></h3>
+    </div>
+    <div>
+      <h3 id="all_user_wins"></h3>
+    </div>
+    <div>
+      <h3 id="user_win_rate"></h3>
+    </div>
+  </div>
+  <br />
+
+  <div class="hidden" id="restart">
+    <button id="restart_button">Reset Game</button>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
