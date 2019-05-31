@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"  href="styles.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="small_screen_styles.css">
   <title>jQuery RPS</title>
 </head>
 <body>
@@ -37,7 +38,7 @@
 
       </div>
       <div>
-        <h1>VS</h1>
+        <img id="vs" src="https://cdn3.iconfinder.com/data/icons/abstract-1/512/versus-512.png">
       </div>
       <div id="computer_play">
 
@@ -61,7 +62,7 @@
     <div>
       <h3 id="all_user_wins"></h3>
     </div>
-    <div>
+    <div class="win_rate">
       <h3 id="user_win_rate"></h3>
     </div>
   </div>
